@@ -1,0 +1,193 @@
+ .transaction-header{
+    width: 100%;
+    background-color: #307fa0;
+    padding: 7px 15px;
+    overflow: auto;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.transaction-header .transaction-header-content .logo{
+  display: none !important;
+}
+.transaction-header .transaction-header-content .logo img{
+  width: 100px;
+}
+.transaction-header .transaction-header-content ul{
+  margin: 0px;
+  padding-left: 0px;
+}
+.transaction-header .transaction-header-content ul li{
+  display: inline-block;
+  list-style: none;
+
+}
+.transaction-header .transaction-header-content a{
+  color: #fff;
+}
+.transaction-header .transaction-header-content a:hover{
+  text-decoration: none;
+}
+.transaction-header .transaction-header-content .arrow-left-poker{
+    color:#fff;
+        display: inline-block;
+    position: relative;
+    top: 5px;
+    display: none !important;
+}
+.transaction-header .transaction-header-content .arrow-left-poker .fa{
+  font-size:  25px;
+}
+.transaction-header .transaction-header-content .transaction-header-head{
+  font-size: 20px;
+}
+.no-padding-div{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.pd-r-5{
+  padding-right: 5px;
+}
+.pd-r-15{
+  padding-right: 15px;
+}
+.form-group{
+  margin-bottom: 0px;
+}
+.transaction-header .download_excel img{
+  width:40px;
+  
+}
+.transaction-header .download_excel, .transaction-header .download_excel:focus, .transaction-header .download_excel:active{
+  background-color: transparent !important;
+  padding: 0px;
+  border:none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.download-excel-btn-sec{
+  position: fixed;
+  bottom: 270px !important;
+  right: 15px;
+  z-index: 9;
+}
+.transaction-header .custom_btn_history {
+    background-color: transparent !important;
+    color: white!important;
+    padding: 0px;
+}
+.transaction-header .custom_btn_history .fa{
+    font-size: 22px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,00.3);
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.transaction-header .custom_btn_history.white-custom-btn{
+      background-color: #fff !important;
+    padding: 0px 10px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: #000 !important;
+}
+
+
+
+@media(max-width: 991px){
+
+.transaction-header .transaction-header-content .arrow-left-poker{
+    display: block !important;
+}
+  .transaction-header .transaction-header-content .logo img{
+    width: 70px;
+  }
+  .transaction-header .transaction-header-content .transaction-header-head{
+    font-size: 16px;
+  }
+  
+  
+  .transaction-header .input-group input, .transaction-header .custom-select{
+        padding: 5px 5px;
+      height: 26px;
+      min-height: auto;
+      font-size: 10px;
+      line-height: normal;
+      text-align:center;
+      margin-top: 0px;
+  }
+  .transaction-header button.custom_btn_color{
+    padding: 5px;
+    height: 26px;
+    margin-top: 0px;
+    line-height: 10px;
+  }
+  .transaction-header button.custom_btn_color .fa{
+    font-size: 12px;
+  }
+  .vertical_align td, .vertical_align th{
+    font-size: 12px !important;
+  }
+
+  .transaction-header .transaction-header-content .logo{
+    display: block !important;
+  }
+
+}
+@media(max-width:767px){
+  .transaction-header .custom_btn_history{
+    margin-top: 0px;
+  }
+  .transaction-header .custom_btn_history .fa{
+    font-size: 22px;
+  }
+   .table{
+      width: 700px;
+    }
+   .transaction-header .custom_btn_history.white-custom-btn{
+    margin-top: 0px !important
+  }
+  .download-excel-btn-sec{
+  display: none;
+}
+}
+@media(max-width:575px){
+  .no-padding-div{
+    padding-left: 15px;
+    padding-right: 15px;
+  } 
+}
+
+@media(max-width:480px){
+    .transaction-header .transaction-header-content .arrow-left-poker{
+        margin-right: 5px;
+    }
+ 
+    .transaction-header{
+        padding: 10px;
+        overflow: inherit;
+    }
+
+
+}
+
+
+
+/*****************************22-Oct-2020*********************************/
+
+@media(max-width:576px){
+  .transaction-header .transaction-header-content .logo{
+    display: none !important;
+  }
+  .transaction-header .transaction-header-content .arrow-left-poker{
+    display: none !important;
+  }
+}
+
+
+
+
+
+/************08-Sep-2020**********/
+
+.ui-datepicker{
+      z-index: 999 !important;
+    }
