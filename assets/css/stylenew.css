@@ -2664,9 +2664,9 @@ border-radius: 0px;
 .loader-wrapper {
   --line-width: 5px;
   --curtain-color: #f1faee;
-  --outer-line-color: #a8dadc;
-  --middle-line-color: #457b9d;
-  --inner-line-color: #1d3557;
+  --outer-line-color: #ffdd00;
+  --middle-line-color: #fbab23;
+  --inner-line-color: #0e1721;
   position:fixed;
   top:0;
   left:0;
@@ -2778,4 +2778,7 @@ border-radius: 0px;
   visibility: hidden;
   transform:translateY(-100%);
   transition: all .3s 1s ease-out;
+}
+.bannerbutton input ,.bannerbutton button{
+  min-height: 40px;
 }
