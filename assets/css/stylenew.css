@@ -2782,3 +2782,24 @@ border-radius: 0px;
 .bannerbutton input ,.bannerbutton button{
   min-height: 40px;
 }
+.foot-nav li a {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.container-fluid.bgss.pt-5 .col-md-3 h4 {
+  color: #fbab23 !important;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.imageclass-add img {
+  width: 100%;
+margin-top: 95px;
+}
+
+@media (max-width: 992px) {
+  .imageclass-add img {
+  margin-top: 15px;
+}
+}
