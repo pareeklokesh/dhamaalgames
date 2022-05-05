@@ -2648,3 +2648,6 @@ border-radius: 0px;
 .faqs-rummy .accordion-item .accordion-item-body-content {
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1 !important;
 }
+.accordion-item-body {
+  clear: both;
+}
