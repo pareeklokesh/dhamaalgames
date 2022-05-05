@@ -2651,3 +2651,6 @@ border-radius: 0px;
 .accordion-item-body {
   clear: both;
 }
+#glossary-faq .col-md-6:last-child .fw-bold.text-dark {
+  text-transform: uppercase;
+}
