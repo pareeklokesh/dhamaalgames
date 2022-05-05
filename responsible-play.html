@@ -136,6 +136,12 @@ p {
 
 </head>
 <body>
+<div class="loader-wrapper">
+  <div class="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
 
 <div class="bg-dark header-color fixed-top top-nav-collapse" style="box-shadow: 0 0 1px 0px #ddd;">
 <!-- <ul class="navbar-nav ml-auto lgsn" style="font-family: 'Josefin Sans', sans-serif;display:flex;position: absolute;
@@ -646,6 +652,11 @@ You can refer to Our Terms of service for more details.</p>
     }
 };
 </script>
-  
+  <script>
+  window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+</script>
+
 </body>
 </html>

@@ -92,6 +92,12 @@
 </head>
 <body>
 
+<div class="loader-wrapper">
+  <div class="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
 <div class="bg-dark header-color fixed-top top-nav-collapse" style="box-shadow: 0 0 1px 0px #ddd;">
 <!-- <ul class="navbar-nav ml-auto lgsn" style="font-family: 'Josefin Sans', sans-serif;display:flex;position: absolute;
     right: -9%;margin-top: 21px;z-index:6">
@@ -512,6 +518,12 @@ Nagar Industrial Area, Jaipur, Rajasthan, 302017</h4>
     $(this).css("font-size", "0");
     $(".spiner").css("display", "inline-block");
   });
+</script>
+
+<script>
+  window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
 </script>
 
 </body>

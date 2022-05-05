@@ -126,7 +126,13 @@
 </head>
 <body>
 
-<div class="bg-dark header-color fixed-top top-nav-collapse">
+<div class="loader-wrapper">
+  <div class="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
+<div class="bg-dark header-color fixed-top top-nav-collapse" style="box-shadow: 0 0 1px 0px #ddd;">
 <!-- <ul class="navbar-nav ml-auto lgsn" style="font-family: 'Josefin Sans', sans-serif;display:flex;position: absolute;
     right: -9%;margin-top: 21px;z-index:6">
         <li class="nav-item logresp" style="text-transform: uppercase;position: inherit;z-index: 1;right: 133px;">
@@ -143,7 +149,7 @@
               <a style="text-decoration: none;" class="margtt">
                
               
-             </a><a class="open_login btn btn-default bg_yellow white-color login_with_mobile " data-toggle="modal" data-target="#loginWithMobile" style="color:#000;">Login | Signup</a>
+             </a><a class="open_login btn btn-default bg_yellow white-color login_with_mobile " data-toggle="modal" data-target="" style="color:#000;">Login | Signup</a>
 
                      
         
@@ -167,28 +173,45 @@
        <li class="nav-item">
           <a class="nav-link lbfont" href="index.html">Home</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link lbfont" href="rummy-game-online.html">Rummy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lbfont" href="ludo-game-online.html">Ludo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lbfont" href="poker-game-online.html">Poker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="promotion.html">Promotions</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle ujj2 one" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Games
+            How to play
             <i class="fas fa-caret-down"></i>
           </a>
           <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" style="background: white;top:inherit !important;">
-         
+     
             <a style="color: #000;" class="dropdown-item zz" href="how-to-play-poker.html">Poker</a>
             <a style="color: #000;" class="dropdown-item zz" href="how-to-play-rummy.html">Rummy</a>
             <a style="color: #000;" class="dropdown-item zz" href="how-to-play-ludo.html">Ludo</a>
-        
+    
           </div>
-        </li> 
-    <li class="nav-item">
-          <a class="nav-link" href="promotion.html">Promotions</a>
         </li>
-          <li class="nav-item">
+        <li class="nav-item">
          <a class="nav-link lbfont" href="faqs.html">FAQ's</a>
         </li>
-         <li class="nav-item d-item">
-         <a class="nav-link filedownload download-app" href="https://bit.ly/DhamaalGames"><img style="width: 30px;" src="assets/img/and.png"> Download App</a>
+        <li class="nav-item">
+          <a class="nav-link lbfont" href="contact-us.html">Contact Us</a>
         </li>
+
+         
+    
+          
+         <!-- <li class="nav-item d-item">
+         <a class="nav-link filedownload download-app" href="https://bit.ly/DhamaalGames"><img style="width: 30px;" src="assets/img/and.png"> Download App</a>
+        </li> -->
 
 
       </ul>
@@ -952,6 +975,11 @@ $('.moreless-button4').click(function() {
     $(this).css("font-size", "0");
     $(".spiner").css("display", "inline-block");
   });
+</script>
+<script>
+  window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
 </script>
 
 </body>
