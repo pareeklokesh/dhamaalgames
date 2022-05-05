@@ -2654,3 +2654,6 @@ border-radius: 0px;
 #glossary-faq .col-md-6:last-child .fw-bold.text-dark {
   text-transform: uppercase;
 }
+#content .fw-bold, #content .text-dark, #content h3, #content h4 {
+  text-transform: capitalize;
+}
