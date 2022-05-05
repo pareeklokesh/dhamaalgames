@@ -2635,3 +2635,9 @@ border-radius: 0px;
   font-weight: 600 !important;
   color: #343a40 !important;
 }
+.rummy-list .readli.text-dark {
+  padding-left: 0;
+}
+.rummy-list {
+  padding-left: 15px;
+}
