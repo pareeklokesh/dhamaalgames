@@ -2630,3 +2630,8 @@ border-radius: 0px;
 }
 
 }
+
+.text-center .text-dark ~ .text-muted {
+  font-weight: 600;
+  color: #343a40 !important;
+}
