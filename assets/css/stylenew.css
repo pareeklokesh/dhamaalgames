@@ -2632,6 +2632,6 @@ border-radius: 0px;
 }
 
 .text-center .text-dark ~ .text-muted {
-  font-weight: 600;
+  font-weight: 600 !important;
   color: #343a40 !important;
 }
