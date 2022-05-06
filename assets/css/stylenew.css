@@ -2803,3 +2803,7 @@ margin-top: 95px;
   margin-top: 15px;
 }
 }
+
+h2.maiheading {
+  text-transform: capitalize;
+}
