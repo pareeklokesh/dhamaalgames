@@ -3020,7 +3020,7 @@ ul.custom_menu_links.nav-tabs .nav-link:hover {
 ul.custom_menu_links .nav-link.active {
     color: #ffffff !important;
     background-color: transparent;
-    font-size: 15px;
+    
 }
 
 ul.custom_menu_links.nav-tabs .nav-link {
