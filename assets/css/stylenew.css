@@ -2826,4 +2826,7 @@ h2.maiheading {
   left: 0 !important;
   margin: 0px auto;
 }
+.discoverGame .col-md-6.mt-5 .cards {
+  width: 100%;
+} 
 }
