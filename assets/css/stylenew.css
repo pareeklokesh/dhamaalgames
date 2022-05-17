@@ -2815,6 +2815,15 @@ h2.maiheading {
   color: #fff !important;
 }
 
+.col-md-4.mt-5 .product-info ~ .btns {
+  display: none !important;
+}
+.container-fluid.bg-one .col-md-4.mt-5 .card {
+  height: inherit !important;
+  min-height: 100%;
+  padding-bottom: 20px;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .col-md-4.mt-5 .product-info ~ .btns {
   display: none !important;
@@ -2832,5 +2841,8 @@ h2.maiheading {
 .discoverGame .col-md-6.mt-5 .cards p {
   text-align: center !important;
 }
- 
+.col-md-4.mt-5 .product-info ~ .btns {
+  display: block !important;
+}
+
 }
