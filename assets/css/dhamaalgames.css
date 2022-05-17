@@ -1996,7 +1996,7 @@ padding: 63px -23px;}
 }
 
 
-body,html{overflow-x: hidden;}
+body,html{overflow-x: inherit;}
 
 h2{
     font-weight: 600;
