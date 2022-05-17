@@ -2505,6 +2505,7 @@ left: -29px;
   display: block !important;
   top: inherit;
   bottom: 0;
+  left: 0 !important; 
 }
 .carousel-item img {
   width: 100%;
@@ -2817,5 +2818,12 @@ h2.maiheading {
 @media (min-width: 768px) and (max-width: 992px) {
   .col-md-4.mt-5 .product-info ~ .btns {
   display: none !important;
+}
+}
+
+@media (max-width: 768px){
+  .download .my-btn.app.d-none {
+  left: 0 !important;
+  margin: 0px auto;
 }
 }
