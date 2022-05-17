@@ -2844,5 +2844,12 @@ h2.maiheading {
 .col-md-4.mt-5 .product-info ~ .btns {
   display: block !important;
 }
+.readmorecontent p, .readmorecontent .text-dark {
+  font-size: 14px;
+  line-height: 28px;
+}
+.container.cont .col-md-12.mt-5.mb-4 h2.text-dark {
+  font-size: 20px;
+}
 
 }
