@@ -1602,10 +1602,13 @@ form.newsletter__form .my-new.new-login-btn {
   display: block;
   width: 100%;
   bottom: 0;
-  margin-left: -15px;
+  margin-left: 0px;
   padding: 21px 0px;
   height: 88px;
   padding: 63px -23px;
+}
+.download p.ne {
+    display: none;
 }
 .app {
   width: 230px !important;
@@ -2301,7 +2304,7 @@ font-weight: 400 !important;
 font-size: 16px !important;
 min-width: 240px !important;
 display: inline-block;
-padding-left: 44px;
+padding-left: 46px;
 }
 .bannerbutton input::placeholder{
   color: #000 !important;
@@ -2502,6 +2505,7 @@ left: -29px;
   display: block !important;
   top: inherit;
   bottom: 0;
+  left: 0 !important; 
 }
 .carousel-item img {
   width: 100%;
@@ -2663,16 +2667,16 @@ border-radius: 0px;
 
 .loader-wrapper {
   --line-width: 5px;
-  --curtain-color: #f1faee;
-  --outer-line-color: #a8dadc;
-  --middle-line-color: #457b9d;
-  --inner-line-color: #1d3557;
+  --curtain-color: #fff;
+  --outer-line-color: #ffdd00;
+  --middle-line-color: #fbab23;
+  --inner-line-color: #0e1721;
   position:fixed;
   top:0;
   left:0;
   width:100%;
   height:100%;
-  z-index:1000;
+  z-index: 999999999999;
 }
 
 .loader {
@@ -2689,7 +2693,7 @@ border-radius: 0px;
   border-radius:100%;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
-  z-index:1001;
+  z-index:9999999999;
 }
 
 .loader:before {
@@ -2751,7 +2755,7 @@ border-radius: 0px;
   background:var(--curtain-color);
   width:51%;
   height:100%;
-  z-index:1000;
+  z-index:999999999;
 }
 
 .loader-wrapper .loader-section.section-left {
@@ -2778,4 +2782,51 @@ border-radius: 0px;
   visibility: hidden;
   transform:translateY(-100%);
   transition: all .3s 1s ease-out;
+}
+.bannerbutton input ,.bannerbutton button{
+  min-height: 40px;
+}
+.foot-nav li a {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.container-fluid.bgss.pt-5 .col-md-3 h4 {
+  color: #fbab23 !important;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.imageclass-add img {
+  width: 100%;
+margin-top: 95px;
+}
+
+@media (max-width: 992px) {
+  .imageclass-add img {
+  margin-top: 15px;
+}
+}
+
+h2.maiheading {
+  text-transform: capitalize;
+}
+.container-fluid.bgss.pt-5 .mt-3.text-center.colwhite.mobnone, .container-fluid.bgss.pt-5 .text-center.colwhite.pbb-90 {
+  color: #fff !important;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-4.mt-5 .product-info ~ .btns {
+  display: none !important;
+}
+}
+
+@media (max-width: 768px){
+  .download .my-btn.app.d-none {
+  left: 0 !important;
+  margin: 0px auto;
+}
+.discoverGame .col-md-6.mt-5 .cards {
+  width: 100%;
+} 
 }
