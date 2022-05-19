@@ -279,7 +279,7 @@ h2 {
     <div class="row">
   <div class="bannerbutton" style="position: relative;">
     <div class="" style="position: relative;">
-  <input type="number" name="" placeholder="Enter mobile number" id="mob-number" min="10" max="10" step="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+  <input type="text" name="" placeholder="Enter mobile number" id="mob-number" min="10" max="10" step="10" maxlength="10" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
   <span class="numbertext">+91</span>
   <button class="getbutton"><span class="spiner">Sending Link</span>Get Download Link</button>
 </div>
@@ -2753,6 +2753,7 @@ function myFunction() {
         if($(this).val().length == 10) {
            $('.getbutton').prop('disabled', false);
         }
+
      });
  });
 </script>
