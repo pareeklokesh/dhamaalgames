@@ -249,7 +249,7 @@
     <div class="row">
   <div class="bannerbutton" style="position: relative;">
     <div class="" style="position: relative;">
-  <input type="number" name="" placeholder="Enter mobile number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+  <input type="text" name="" placeholder="Enter mobile number" id="mob-number" min="10" max="10" step="10" maxlength="10" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
   <span class="numbertext">+91</span>
   <button class="getbutton"><span class="spiner">Sending Link</span>Get Download Link</button>
 </div>
@@ -546,6 +546,62 @@
   window.addEventListener('load',function(){
   document.querySelector('body').classList.add("loaded")  
 });
+</script>
+<script>
+  $(document).ready(function() {
+     $('.getbutton').prop('disabled', true);
+     $('#mob-number').keyup(function() {
+        if($(this).val().length == 10) {
+           $('.getbutton').prop('disabled', false);
+        }
+
+     });
+ });
+</script>
+<script type="text/javascript">
+  $(".getbutton").on("click",function(){
+    var client_id = 99;
+    var number = $("#mob-number").val();
+      var formData = new FormData();
+      formData.append('phone_number',number);
+      formData.append('client_id',client_id);
+      var api_url1="https://staging-api.bopanel.xyz/index.php/web_service/downlode_sms";
+      $(".getbutton").attr("disabled","disabled");
+    $.ajax({
+        url:api_url1,
+        method:"post",
+        data: formData,
+        dataType: 'JSON',
+        processData: false,
+        contentType: false,
+
+        success: function(data){
+            
+            var result=data;
+            if(result.error==0){
+
+             // $(".getbutton").html("Sent");
+             // $(".getbutton").hide();
+             // $(".getbutton").css("font-size","20px");
+              //$("#mob-number").hide();
+              //$(".numbertext").hide();
+              $(".link-sent").text("Dhamaal Games App Download link sent on your number.");
+              $(".link-sent").show();
+              $(".getbutton").css("font-size", "16px");
+              $(".getbutton").removeAttr("disabled");
+              $(".spiner").css("display", "none");
+              $("#mob-number").val('');
+            // filedownload(result.app_link,'App');
+
+             
+
+            }
+          }
+    });
+  });
+
+
+
 </script>
 
 </body>
