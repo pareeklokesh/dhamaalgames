@@ -2434,15 +2434,16 @@ left: -29px;
 
 
 @supports (-webkit-touch-callout: none) {
-  .iphone-show, .getbutton-mobile {display: block;}
-  .getbutton-mobile {
-    display: none;
+  .iphone-show, .ios-browswe {display: block !important;}
+  .getbutton-mobile, .android-app {
+    display: none !important;
   }
+
 }
 
 @supports not (-webkit-touch-callout: none) {
-  .iphone-show {
-    display: none;
+  .iphone-show, .ios-browswe {
+    display: none !important;
   }
 }
 
