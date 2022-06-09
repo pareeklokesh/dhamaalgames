@@ -2859,3 +2859,7 @@ h2.maiheading {
 .container-fluid.bgss.pt-5 .col-md-3 .connec h4 {
   margin-top: 25px;
 }
+#navbarNavDropdown .navbar-nav li.nav-item .dropdown-menu {
+  margin-top: -2px;
+  border: 0;
+}
