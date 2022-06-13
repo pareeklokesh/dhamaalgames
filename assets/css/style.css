@@ -409,6 +409,21 @@ input[type=number] {
 .space-upiadd {
   flex-wrap: inherit !important;
 }
+element {
+
+}
+.marquee {
+    display: none;
+    color: #3f6;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: #0a0809;
+
+}
+.mobile-view {
+  display: none;
+}
 
 
 @media (max-width: 991px) {
@@ -630,6 +645,32 @@ margin-top: 0 !important;
 }
 .navbar-mobile ul li {
   margin-right: 15px;
+}
+.marquee, .mobile-view {
+  display: block;
+}
+.w-100.mobile-view {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+}
+.download-footer {
+  width: 90%;
+  margin: 0px auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #3f6;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0;
+  padding: 10px 10px;
+  border: 1px solid #f3f2f4;
+  border-radius: 5px;
 }
 
 }
