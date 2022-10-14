@@ -43,11 +43,11 @@
     
 
   
-<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="assets/css/bootstrap.css">
-<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="assets/css/owl_002.css">
-<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="assets/css/style.css">
-<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="assets/css/dhamaalgames.css">
-<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/owl_002.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/dhamaalgames.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
         
   <link rel="canonical" href="https://www.dhamaalgames.com/">
   <link rel="icon" href="assets/img/fav.png" type="image/png">
@@ -1056,7 +1056,7 @@ the game that you want to play, and then join a match. After that, join a
     
       </div>
          <div style="margin-top: 15px;">
-        <a href="https://bit.ly/DhamaalGames"><i class="fab fa-android"><img src="assets/img/and.png" width="30" style="margin-left: -1px;"></i></a> &nbsp;&nbsp;  <!-- <i class="fab fa-windows"></i>&nbsp;&nbsp; -->  <i class="fab fa-apple"></i>&nbsp;&nbsp;  <i class="fab fa-ios"></i>
+        <a href="https://bit.ly/DhamaalGames"><i class="fab fa-android"><img src="assets/img/and.png" width="25" style="margin-left: -1px;"></i></a> &nbsp;&nbsp;  <!-- <i class="fab fa-windows"></i>&nbsp;&nbsp; -->  <i class="fab fa-apple"></i>&nbsp;&nbsp;  <i class="fab fa-ios"></i>
         </div>
 
   </div>
@@ -1078,9 +1078,6 @@ the game that you want to play, and then join a match. After that, join a
 
      <button class="my-btn  app d-none ios-browswe"><a style="display: flex; justify-content: center; align-items: center;" class="" href="https://apps.apple.com/in/app/dhamaal-games/id1609035302"> <img src="assets/img/iponeicon.png" style="color:#0b133a;margin-right: 8px;" width="20"> Download App </a></button>
 
-      <p style="font-size:11px;color: #5b93da;line-height:15px;text-align:left; padding: 10px 25px; margin: 0px 20px; display: none;">This
- game involves an element of financial risk and may be addictive. Please
- play responsibly and at your own risk. T&amp;C Apply. For 18+ only</p>
     </div>
 
 
@@ -2676,39 +2673,6 @@ function myFunction() {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 
-
-
-
-
-
-
- 
- <script>
-   jQuery(document).ready(function($) {
-      var inner_width = window.innerWidth;
-      if(inner_width < 1366) {
-        $('.container-fluid:eq(0)').addClass('p-l-2 p-r-2');   
-      }
-      if (window.matchMedia("(orientation: landscape)").matches) {
-          $('.landscape_header_margin1').addClass('landscape_header_margin'); 
-        }
-
-      // sidebar code 
-
-         
-        $('.checkeach ul li').each(function(){
-          var checkstatus = $(this).hasClass('subactive');   
-          if(checkstatus == true) {
-            $(this).parent('ul').parent('div').css({'display' : 'block'});
-            $(this).parent('ul').parent('div').parent('li').addClass('active');
-          }
-      });
-
-
-
-    });
-  
- </script>
  
 
 <script>
@@ -2730,19 +2694,7 @@ function myFunction() {
 </script>
 
  
-<script>
-  $(".carousel").swipe({
 
-  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
-
-  },
-  allowPageScroll:"vertical"
-
-});
-</script>
 
 
 
