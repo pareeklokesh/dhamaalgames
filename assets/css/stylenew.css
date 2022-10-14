@@ -2863,3 +2863,55 @@ h2.maiheading {
   margin-top: -2px;
   border: 0;
 }
+
+@media (max-width: 767px) {
+  #navbarNavDropdown .navbar-nav li.nav-item .dropdown-menu a.dropdown-item
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  
+.col-sm-4.same_heading.pull-right {
+  padding: 0 !important;
+  width: auto !important;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+.btn_active_inactive.text-right {
+  position: absolute;
+top: 71px;
+right: 90px;
+margin-right: 0;
+}
+.head_padding .header-color .col-md-3 {
+  padding: 0;
+}
+.head_padding .header-color .col-md-3 .title_h1.same_heading.header_alignment {
+  padding-left: 0 !important;
+  font-size: 16px !important;
+}
+.head_padding .header-color #top_margin_for_search {
+  padding: 0;
+}
+.head_padding .header-color #top_margin_for_search .input-group.serchbox_up #searchtable_player {
+  border: 1px solid #000;
+}
+.btn_active_inactive.text-right p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+}
